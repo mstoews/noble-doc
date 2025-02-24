@@ -13,11 +13,11 @@ export default defineConfig({
 			sidebar: [				
 				{
 					label: 'Condominiums Guide',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Algorithms Example', slug: 'guides/chat' },
-						{ label: 'Condo Requirements', slug: 'guides/condo_requirements' },						
-					],
+					autogenerate: { directory: 'guides' },					
+				},
+				{
+					label: 'Noble Ledger',
+					autogenerate: { directory: 'noble_ledger' },
 				},
 				{
 					label: 'Reference',
