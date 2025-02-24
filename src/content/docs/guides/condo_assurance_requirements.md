@@ -1,5 +1,5 @@
 ---
-title: Condo Requirements for Assurance in Saskatchewan
+title: Condo Assurance Requirements
 description: When Do Condominiums in Saskatchewan Require an Audit or Review, and How to Avoid It
 ---
 

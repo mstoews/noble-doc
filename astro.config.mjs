@@ -18,11 +18,7 @@ export default defineConfig({
 				{
 					label: 'Noble Ledger',
 					autogenerate: { directory: 'noble_ledger' },
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
+				},				
 			],
 		}),
 	],
