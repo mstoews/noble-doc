@@ -1,13 +1,11 @@
 ---
-title: Condo Requirements for Saskatchewan
-description: Overview of the audit and review requirements for condominium corporations in Saskatchewan
+title: Condo Requirements for Assurance in Saskatchewan
+description: When Do Condominiums in Saskatchewan Require an Audit or Review, and How to Avoid It
 ---
 
 ## When Do Condominiums in Saskatchewan Require an Audit or Review, and How to Avoid It 
 
-
 ### Preamble 
-
 This document provides an overview of the audit and review requirements for condominium corporations in Saskatchewan as stipulated by The Condominium Property Act, 1993. It outlines the conditions under which audits or reviews are necessary, the steps to avoid these requirements, and the benefits and reasons for conducting or waiving audits and reviews. This information is intended to help condominium corporations manage their financial obligations effectively and make informed decisions regarding their financial reporting practices. 
 
  
