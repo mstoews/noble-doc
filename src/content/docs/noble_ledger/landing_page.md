@@ -13,7 +13,8 @@ Your data is important to you, and we use the latest standards to ensure your da
 ### Data integrity and approval process   
 Ensure your transactions are valid and correct through robust approval process, and data is linked appropriately to ensure you never lose the invoices and documents you rely on.
 
-![Journal Update](https://firebasestorage.googleapis.com/v0/b/condo-mgmt.appspot.com/o/documents%2Fnobleledger_entry_blank.jpg?alt=media&token=fdc293eb-e0d2-4454-bf45-18ebd2b94659)
+
+![Journal Update](../../../assets/updating_a_journal.png)
 
 ### Lightning-fast   
 Everyone hates slow accounting tools. Our product is lightning fast so you can produce the report you need in seconds, not minutes or hours.   
