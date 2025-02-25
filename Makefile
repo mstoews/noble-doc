@@ -21,12 +21,11 @@ start:
 add:	
 	@echo "push to git\n" 
 	git add . 
-	@echo "update" 
+	@echo "update\n" 
 	git commit -m '$(comment)' 
-	@echo "push" 
+	@echo "push to main\n" 
 	git push origin main 
 	
-
 .PHONY: push
 push:
 	@echo "push"
