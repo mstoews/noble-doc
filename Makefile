@@ -19,7 +19,7 @@ start:
 
 .PHONY: add
 add:	
-	@echo "push to git" 
+	@echo "push to git\n" 
 	git add . 
 	@echo "update" 
 	git commit -m '$(comment)' 
