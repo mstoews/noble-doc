@@ -12,6 +12,10 @@ export default defineConfig({
 			},
 			sidebar: [				
 				{
+					label: 'Accounting',
+					autogenerate: { directory: 'accounting' },					
+				},
+				{
 					label: 'Guides',
 					autogenerate: { directory: 'guides' },					
 				},
