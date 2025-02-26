@@ -2,8 +2,7 @@ site:
   name: Noble Ledger Doc
   site: 'https://nobleledger-doc.com'
   base: '/'
-  trailingSlash: false
-
+  trailingSlash: true
   googleSiteVerificationId: na
 
 # Default SEO metadata
@@ -11,7 +10,7 @@ metadata:
   title:
     default: NobleLedgerDoc
     template: '%s — NobleLedgerDoc'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Noble Ledger Doc is a documentation site for Noble Ledger, a non-profit organizations."
   robots:
     index: true
     follow: true

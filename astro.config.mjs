@@ -2,19 +2,20 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import mdx from '@astrojs/mdx';
-import tailwind from '@astrojs/tailwind';
 import icon from 'astro-icon';
 import sitemap from '@astrojs/sitemap';
-
+import tailwindcss from "@tailwindcss/vite";
 
 import nobleledger from './vendor/integration';
 
 // https://astro.build/config
 export default defineConfig({
+	vite: {
+		// @ts-ignore
+		plugins: [tailwindcss()],
+	},
 	integrations: [		
-		tailwind({
-			applyBaseStyles: false,
-		}),
+		
 		sitemap(),
 		
 		icon({
@@ -64,5 +65,7 @@ export default defineConfig({
 		nobleledger({
 			config: './src/config.yaml',
 		}),
+		
 	],
+	
 });
