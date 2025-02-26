@@ -9,7 +9,7 @@ build:
 deploy:
 	@echo "Deploy hosting to netlify"
 	pnpm run build	
-	ntl deploy --prod	
+	ntl deploy --prod --dir=dist
 
 .PHONY: start
 start:
