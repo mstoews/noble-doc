@@ -3,8 +3,6 @@ title: Privacy Policy Update
 description: Noble Ledger Privacy Policy
 ---
 
-
-
 **Last updated February 26, 2025**
   
 
@@ -58,53 +56,14 @@ SUMMARY OF KEY POINTS
 
 Want to learn more about what we do with any information we collect? [Review the Privacy Notice in full](#toc).
 
-  
 
-TABLE OF CONTENTS
------------------
-
-[1\. WHAT INFORMATION DO WE COLLECT?](#infocollect)
-
-[2\. HOW DO WE PROCESS YOUR INFORMATION?](#infouse)
-
-[3\. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?](#legalbases)
-
-[4\. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?](#whoshare)
-
-[5\. DO WE OFFER ARTIFICIAL INTELLIGENCE-BASED PRODUCTS?](#ai)
-
-[6\. HOW LONG DO WE KEEP YOUR INFORMATION?](#inforetain)
-
-[7\. HOW DO WE KEEP YOUR INFORMATION SAFE?](#infosafe)
-
-[8\. DO WE COLLECT INFORMATION FROM MINORS?](#infominors)
-
-[9\. WHAT ARE YOUR PRIVACY RIGHTS?](#privacyrights)
-
-[10\. CONTROLS FOR DO-NOT-TRACK FEATURES](#DNT)
-
-[11\. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?](#uslaws)
-
-[12\. DO WE MAKE UPDATES TO THIS NOTICE?](#policyupdates)
-
-[13\. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact)
-
-[14\. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?](#request)
-
-  
-
-  
-
-**
 
 1\. WHAT INFORMATION DO WE COLLECT?
 -----------------------------------
 
-
-
 ### Personal information you disclose to us
 
-**_In Short:_** _We collect personal information that you provide to us._
+**In Short:** _We collect personal information that you provide to us._
 
   
 
@@ -147,7 +106,7 @@ Our use of information received from Google APIs will adhere to [Google API Ser
 2\. HOW DO WE PROCESS YOUR INFORMATION?
 ---------------------------------------
 
-**_In Short:_** _We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent._
+**In Short:** _We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent._
 
   
 
@@ -169,11 +128,11 @@ Our use of information received from Google APIs will adhere to [Google API Ser
 3\. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?
 ---------------------------------------------------------------
 
-**_**In Short:** We only process your personal information when we believe it is necessary and we have a valid legal reason (i.e., legal basis) to do so under applicable law, like with your consent, to comply with laws, to provide you with services to enter into or fulfill our contractual obligations, to protect your rights, or to fulfill our legitimate business interests._
+**In Short:** We only process your personal information when we believe it is necessary and we have a valid legal reason (i.e., legal basis) to do so under applicable law, like with your consent, to comply with laws, to provide you with services to enter into or fulfill our contractual obligations, to protect your rights, or to fulfill our legitimate business interests.
 
   
 
-_**If you are located in the EU or UK, this section applies to you.**_
+**If you are located in the EU or UK, this section applies to you.**
 
   
 
@@ -222,12 +181,12 @@ In some exceptional cases, we may be legally permitted under applicable law to p
 
   
 
-**
+
 
 4\. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
 -------------------------------------------------------------
 
-****_In Short:_** _We may share information in specific situations described in this section and/or with the following third parties._
+**In Short:** _We may share information in specific situations described in this section and/or with the following third parties._
 
   
 
@@ -237,12 +196,12 @@ We may need to share your personal information in the following situations:
 
   
 
-**
+
 
 5\. DO WE OFFER ARTIFICIAL INTELLIGENCE-BASED PRODUCTS?
 -------------------------------------------------------
 
-****_In Short:_** _We offer products, features, or tools powered by artificial intelligence, machine learning, or similar technologies._
+**In Short:** _We offer products, features, or tools powered by artificial intelligence, machine learning, or similar technologies._
 
   
 
@@ -285,7 +244,7 @@ We believe in giving you the power to decide how your data is used. To opt out, 
 6\. HOW LONG DO WE KEEP YOUR INFORMATION?
 -----------------------------------------
 
-****_In Short:_** _We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law._
+**In Short:** _We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law._
 
   
 
@@ -297,12 +256,12 @@ When we have no ongoing legitimate business need to process your personal inform
 
   
 
-**
+
 
 7\. HOW DO WE KEEP YOUR INFORMATION SAFE?
 -----------------------------------------
 
-****_In Short:_** _We aim to protect your personal information through a system of organizational and technical security measures._
+**In Short:** _We aim to protect your personal information through a system of organizational and technical security measures._
 
   
 
@@ -310,12 +269,12 @@ We have implemented appropriate and reasonable technical and organizational secu
 
   
 
-**
+
 
 8\. DO WE COLLECT INFORMATION FROM MINORS?
 ------------------------------------------
 
-****_In Short:_** _We do not knowingly collect data from or market to children under 18 years of age._
+**In Short:** _We do not knowingly collect data from or market to children under 18 years of age._
 
   
 
@@ -323,12 +282,12 @@ We do not knowingly collect, solicit data from, or market to children under 18 y
 
   
 
-**
+
 
 9\. WHAT ARE YOUR PRIVACY RIGHTS?
 ---------------------------------
 
-****_In Short:_** _Depending on your state of residence in the US or in some regions, such as the European Economic Area (EEA), United Kingdom (UK), Switzerland, and Canada, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time, depending on your country, province, or state of residence._
+**In Short:** _Depending on your state of residence in the US or in some regions, such as the European Economic Area (EEA), United Kingdom (UK), Switzerland, and Canada, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time, depending on your country, province, or state of residence._
 
   
 
@@ -364,7 +323,6 @@ Upon your request to terminate your account, we will deactivate or delete your a
 
   
 
-**
 
 10\. CONTROLS FOR DO-NOT-TRACK FEATURES
 ---------------------------------------
@@ -377,16 +335,15 @@ California law requires us to let you know how we respond to web browser DNT sig
 
   
 
-**
 
 11\. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
 -------------------------------------------------------------
 
-****_In Short:_** _If you are a resident of California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Tennessee, Texas, Utah, or Virginia, you may have the right to request access to and receive details about the personal information we maintain about you and how we have processed it, correct inaccuracies, get a copy of, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. More information is provided below._**
+**In Short:** If you are a resident of California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Tennessee, Texas, Utah, or Virginia, you may have the right to request access to and receive details about the personal information we maintain about you and how we have processed it, correct inaccuracies, get a copy of, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. More information is provided below.
 
 ### Categories of Personal Information We Collect
 
-**We have collected the following categories of personal information in the past twelve (12) months:
+We have collected the following categories of personal information in the past twelve (12) months:
 
   
 
@@ -582,20 +539,16 @@ Depending upon the state where you live, you may also have the following rights:
 
 *   Right to opt out of the collection of sensitive data and personal data collected through the operation of a voice or facial recognition feature (as permitted by applicable law, including Florida’s privacy law)
 
-**
+
 
 ### How to Exercise Your Rights
 
-**To exercise these rights, you can contact us by visiting \_\_\_\_\_\_\_\_\_\_, by emailing us at mstoews@nobleledger.com, by visiting nobleledger.com, or by referring to the contact details at the bottom of this document.
+**To exercise these rights, you can contact us by emailing us at mstoews@nobleledger.com, by visiting nobleledger.com, or by referring to the contact details at the bottom of this document.
 
-  
-
-We will honor your opt-out preferences if you enact the [Global Privacy Control](https://globalprivacycontrol.org/) (GPC) opt-out signal on your browser.
-
-  
+We will honor your opt-out preferences if you enact the [Global Privacy Control](https://globalprivacycontrol.org/) (GPC) opt-out signal on your browser.  
 
 Under certain US state data protection laws, you can designate an authorized agent to make a request on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with applicable laws.  
-**
+
 
 ### Request Verification
 
@@ -607,53 +560,36 @@ If you submit the request through an authorized agent, we may need to collect ad
 
 ### Appeals
 
-**Under certain US state data protection laws, if we decline to take action regarding your request, you may appeal our decision by emailing us at \_\_\_\_\_\_\_\_\_\_. We will inform you in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If your appeal is denied, you may submit a complaint to your state attorney general.**
+**Under certain US state data protection laws, if we decline to take action regarding your request, you may appeal our decision by emailing us at mstoews@nobleledger.com. We will inform you in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If your appeal is denied, you may submit a complaint to your state attorney general.**
 
 ### California "Shine The Light" Law
 
-**California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us by using the contact details provided in the section "[HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact)"
+**California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us by using the contact details provided in the section "[HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact)"**
 
-  
 
-**
 
 12\. DO WE MAKE UPDATES TO THIS NOTICE?
 ---------------------------------------
 
-**_**In Short:** Yes, we will update this notice as necessary to stay compliant with relevant laws._
+**In Short:** Yes, we will update this notice as necessary to stay compliant with relevant laws.
 
   
 
 We may update this Privacy Notice from time to time. The updated version will be indicated by an updated "Revised" date at the top of this Privacy Notice. If we make material changes to this Privacy Notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this Privacy Notice frequently to be informed of how we are protecting your information.
 
-  
 
-**
 
 13\. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
 ----------------------------------------------
 
-**If you have questions or comments about this notice, you may email us at mstoews@nobleledger.com or contact us by post at:
-
+if you have questions or comments about this notice, you may email us at **mstoews@nobleledger.com** or contact us by post at:
   
+**Nobleledger 
+405 Main Street, 16th Floor PH1C, New York City, NY 10044
+United States**
 
-Nobleledger
-
-405 Main Street
-
-16th Floor PH1C
-
-New York City, NY 10044
-
-United States
-
-  
-
-**
 
 14\. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
 ------------------------------------------------------------------------
 
-**Based on the applicable laws of your country or state of residence in the US, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please visit: \_\_\_\_\_\_\_\_\_\_.
-
-ul { list-style-type: square; } ul > li > ul { list-style-type: circle; } ul > li > ul > li > ul { list-style-type: square; } ol li { font-family: Arial ; }  
+Based on the applicable laws of your country or state of residence in the US, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information please contact us as above. 
