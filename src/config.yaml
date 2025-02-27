@@ -2,7 +2,7 @@ site:
   name: Noble Ledger Doc
   site: 'https://nobleledger-doc.com'
   base: '/'
-  trailingSlash: true
+  trailingSlash: false
   googleSiteVerificationId: na
 
 # Default SEO metadata

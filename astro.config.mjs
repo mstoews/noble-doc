@@ -40,7 +40,8 @@ export default defineConfig({
 				github: 'https://github.com/mstoews/noble-cp',
 			},
 			
-			sidebar: [				
+			sidebar: 
+			[				
 				{
 					label: 'Noble Ledger',
 					autogenerate: { directory: 'noble_ledger' },
@@ -56,8 +57,7 @@ export default defineConfig({
 				{
 					label: 'Company Policies',
 					autogenerate: { directory: 'policy' },					
-				},
-				
+				},				
 			],
 			
 		}),
