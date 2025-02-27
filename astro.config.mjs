@@ -43,7 +43,7 @@ export default defineConfig({
 			sidebar: 
 			[				
 				{
-					label: 'Noble Ledger',
+					label: 'Noble Ledger Docs',
 					autogenerate: { directory: 'noble_ledger' },
 				},				
 				{

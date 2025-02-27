@@ -1,11 +1,11 @@
 ---
-title: Landing Page
+title: Landing Page Documentation
 description: Landing Page CTA
 ---
 
 # Features Highlight:  
 ## All-in-one Software   
-Combines all the main software you require to manage a condominium property 
+Combines all the main software you require to manage a condominium property and accounting
  
 ### Data security   
 Your data is important to you, and we use the latest standards to ensure your data remains private and secure.  
