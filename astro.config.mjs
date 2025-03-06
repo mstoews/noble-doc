@@ -6,7 +6,6 @@ import icon from 'astro-icon';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from "@tailwindcss/vite";
 
-import nobleledger from './vendor/integration';
 
 // https://astro.build/config
 export default defineConfig({
@@ -62,9 +61,7 @@ export default defineConfig({
 			
 		}),
 		mdx(),
-		nobleledger({
-			config: './src/config.yaml',
-		}),
+		
 		
 	],
 	

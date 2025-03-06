@@ -14,7 +14,7 @@ deploy:
 .PHONY: start
 start:
 	@echo "start web app"
-	pnpm run dev
+	pnpm dev
 
 
 .PHONY: add
@@ -24,7 +24,7 @@ add:
 	@echo "update\n" 
 	git commit -m '$(comment)' 
 	@echo "push to main\n" 
-	git push origin main 
+	git push origin blog-1 
 	
 .PHONY: push
 push:
