@@ -5,12 +5,8 @@ import mdx from '@astrojs/mdx';
 import icon from 'astro-icon';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from "@tailwindcss/vite";
+import starlightBlog from 'starlight-blog'
 
-
-import react from '@astrojs/react';
-
-
-import analogjsangular from '@analogjs/astro-angular';
 
 
 // https://astro.build/config
@@ -35,6 +31,7 @@ export default defineConfig({
           ],
         },
         }), starlight({
+        plugins: [starlightBlog()],
         title: 'Noble Ledger Documentation',
         social: {
             instagram: 'https://github.com/mstoews/noble-doc',
@@ -60,8 +57,9 @@ export default defineConfig({
             },				
         ],
         
-        }), mdx(), react({
-            include: ['**/react/*'],
-          }), analogjsangular()],
+        }), mdx(), 
+   
+        //   analogjsangular()
+        ],
     
 });
