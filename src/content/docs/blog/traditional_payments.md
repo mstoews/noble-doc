@@ -1,7 +1,6 @@
 ---
-title: Traditional Payments
-description: The Problem with Traditional Payment Approvals
-
+title: Problem with Traditional Payment Approvals
+date: 2024-12-24
 ---
 ***The Problem with Traditional Payment Approvals: Why NPOs & Condo Boards Need a Change***
 
