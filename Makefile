@@ -16,7 +16,6 @@ start:
 	@echo "start web app"
 	pnpm dev
 
-
 .PHONY: add
 add:	
 	@echo "push to git\n" 

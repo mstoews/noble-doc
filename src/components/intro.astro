@@ -1,0 +1,29 @@
+---
+import { Icon } from "astro-icon/components";
+import ContentSection from "../components/content-section.astro";
+---
+
+<ContentSection title="Accounting without the stress" id="intro">
+  <Icon slot="eyebrow" name="logomark" class="size-64" />
+  <Fragment slot="lead">
+   Noble Ledger is a powerful accounting and management tool specifically designed for the needs of
+    condominium associations. It simplifies the process of managing finances, tracking expenses, and
+    generating reports, making it easier for board members and property managers to stay organized.
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="/noble_ledger/landing_page"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon name="mdi:telescope" class="size-8" />
+      <span>Read the docs</span>
+    </a>
+    <a
+      href="https://nobleledger.com"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon name="mdi:rocket" class="size-8" />
+      <span>Try it out</span>
+    </a>
+  </div>
+</ContentSection>

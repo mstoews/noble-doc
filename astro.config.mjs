@@ -7,8 +7,6 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from "@tailwindcss/vite";
 import starlightBlog from 'starlight-blog'
 
-
-
 // https://astro.build/config
 export default defineConfig({
     vite: {
@@ -32,13 +30,17 @@ export default defineConfig({
         },
         }), starlight({
         plugins: [starlightBlog()],
-        title: 'Noble Ledger Documentation',
-        social: {
-            instagram: 'https://github.com/mstoews/noble-doc',
+        title: 'NBL Documentation',                
+        logo: {
+            src: './src/assets/chess.jpg',
+            alt: 'Noble Ledger Logo',
         },
-        
         sidebar: 
-        [				
+        [	
+            {
+                label: 'Start Here',
+                autogenerate: { directory: 'getting_started' },
+            },			
             {
                 label: 'Noble Ledger Docs',
                 autogenerate: { directory: 'noble_ledger' },
@@ -56,10 +58,8 @@ export default defineConfig({
                 autogenerate: { directory: 'policy' },					
             },				
         ],
-        
-        }), mdx(), 
-   
-        //   analogjsangular()
+        })
+        , mdx(), 
         ],
     
 });
