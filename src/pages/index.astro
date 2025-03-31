@@ -1,13 +1,15 @@
 ---
 import "@fontsource-variable/inter";
-import Compatibility from "../components/compatibility.astro";
+import "~/styles/index.css";
+
 import Features from "../components/features.astro";
 import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
 import Intro from "../components/intro.astro";
-import Showcase from "../components/showcase.astro";
+import Implementation from "../components/implementation.astro";
 import Splash from "../components/splash.astro";
-import "~/styles/index.css";
+
+import Pricing from "~/components/pricing.astro";
 
 const { generator, site } = Astro;
 
@@ -36,36 +38,34 @@ const description =
 
     <!-- initialize theme -->
     <script is:inline>
-      const themeSaved = localStorage.getItem("theme");
+        const themeSaved = localStorage.getItem("theme");
 
-      if (themeSaved) {
-        document.documentElement.dataset.theme = themeSaved;
-      } else {
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)",
-        ).matches;
-        document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
-      }
+        if (themeSaved) {
+          document.documentElement.dataset.theme = themeSaved;
+        } else {
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)",).matches;
+          document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
+        }
 
-      window
-        .matchMedia("(prefers-color-scheme: dark)")
-        .addEventListener("change", (event) => {
-          if (!localStorage.getItem("theme")) {
-            document.documentElement.dataset.theme = event.matches
-              ? "dark"
-              : "light";
-          }
-        });
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", (event) => {
+            if (!localStorage.getItem("theme")) {
+              document.documentElement.dataset.theme = event.matches
+                ? "dark"
+                : "light";
+            }
+          });
     </script>
   </head>
-  <body
-    class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
-  >
+  <body class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white">
     <Header />
     <Splash />
-    <div class="space-y-24 px-8 py-32">
+    <div class="space-y-14 px-8 py-16">
       <Intro />
-      <Features />      
+      <Features /> 
+      <Implementation />     
+      <Pricing />
     </div>
     <Footer />
   </body>
