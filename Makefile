@@ -2,13 +2,13 @@
 .PHONY: build
 build:
 	@echo "Building site..."
-	pnpm run build
+	pnpm build
 	@echo "Finished started!"
 
 .PHONY: deploy
 deploy:
 	@echo "Deploy hosting to netlify"
-	pnpm run build	
+	pnpm build	
 	ntl deploy --prod --dir=dist
 
 .PHONY: start
