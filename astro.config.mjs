@@ -35,7 +35,7 @@ export default defineConfig({
       plugins: [starlightBlog()],
       title: "NBL Documentation",
       logo: {
-        src: "./src/assets/astronaut.png",
+        src: "./src/assets/chess_board.png",
         alt: "Noble Ledger Logo",
       },
       sidebar: [
