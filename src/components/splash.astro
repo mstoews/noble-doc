@@ -1,35 +1,41 @@
 ---
 import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
-import chess from "~/assets/chess.jpg";
+import chess from "~/assets/astronaut.png";
 import HeroImage from "../components/hero-image.astro";
 import Starfield from "../components/starfield.astro";
-
 
 const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
 ---
 
 <section class="relative h-full bg-black">
-  <Starfield />  
+  <Starfield />
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
   </div>
   <div class="relative grid h-full place-items-center sm:grid-cols-2">
-    <h2  class="flex flex-col items-center gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"  >
+    <h2
+      class="flex flex-col items-center gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"
+    >
       <img
         class="h-48 w-48 rounded-full border-2 border-current p-3"
         src="src/assets/favicons/favicon2.ico?v=2"
         alt="Noble Ledger Logo"
       />
-      <div class="gradient-text text-center text-gray-100 font-extrabold tracking-tighter text-6xl md:text-8xl m-2"  >
-        Manage 
+      <div
+        class="gradient-text text-center text-gray-100 font-extrabold tracking-tighter text-6xl md:text-8xl m-2"
+      >
+        Manage
         <br /> your
         <br /> non-profit
         <br /> finances
       </div>
     </h2>
-    <div id="astronaut" class="w-1/3 max-w-3xl self-start sm:w-8/12 sm:self-auto sm:justify-self-start" >
+    <div
+      id="astronaut"
+      class="w-1/3 max-w-3xl self-start sm:w-8/12 sm:self-auto sm:justify-self-start"
+    >
       <Image
         class="ml-6 h-full w-full object-cover"
         src={chess}
