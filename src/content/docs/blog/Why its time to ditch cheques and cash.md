@@ -1,8 +1,10 @@
 ---
-title: Why It's Time to Ditch Cheques and Cash: Making the Case for Digital Payments
+title: Why It's Time to Ditch Cheques and Cash
 date: 2025-04-10    
 ---
-# Why It’s Time to Ditch Cheques and Cash: Making the Case for Digital Payments  
+
+# Making the Case for Digital Payments
+
 *A practical guide for condo boards and not-for-profits*
 
 If your board is still collecting condo fees or processing reimbursements by cheque or cash, you’re not alone — but you **are** taking unnecessary risks.
