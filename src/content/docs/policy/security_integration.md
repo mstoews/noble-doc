@@ -77,4 +77,3 @@ Currently, we don’t support *Cross-origin isolated sites* (Cross-origin isolat
 
 Cross-origin isolation requires support by all dependencies, and several key dependencies that enable our payment offerings don’t yet provide support for this feature.
 
-
