@@ -25,6 +25,11 @@ add:
 	@echo "push to main\n" 
 	git push origin blog-1 
 	
+.PHONY: all
+all:   
+	@echo "run commit, build and deploy'
+	git add .; git commit -m 'deploy'; git push origin main; make deploy 
+
 .PHONY: push
 push:
 	@echo "push"
