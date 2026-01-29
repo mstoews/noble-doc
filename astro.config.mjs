@@ -8,6 +8,7 @@ import tailwindcss from "@tailwindcss/vite";
 import starlightBlog from "starlight-blog";
 
 // https://astro.build/config
+// @ts-ignore
 export default defineConfig({
   vite: {
     // @ts-ignore
