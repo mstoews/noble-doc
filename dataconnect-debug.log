@@ -1,0 +1,6 @@
+E0201 11:00:31.005232  776074 dev.go:83] Failed to load initial config from "/home/mst/Projects/noble/noble-web/dataconnect": could not find dataconnect.yaml in `/home/mst/Projects/noble/noble-web/dataconnect`
+E0201 11:00:31.005502  776074 watch.go:116] watchAllDir unable to walk dir `/home/mst/Projects/noble/noble-web/dataconnect`: lstat /home/mst/Projects/noble/noble-web/dataconnect: no such file or directory
+I0201 11:00:31.007492  776074 dev.go:104] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+E0201 11:00:41.014503  776074 watch.go:40] Failed to load config from "/home/mst/Projects/noble/noble-web/dataconnect": could not find dataconnect.yaml in `/home/mst/Projects/noble/noble-web/dataconnect`
+E0201 11:00:51.015663  776074 watch.go:40] Failed to load config from "/home/mst/Projects/noble/noble-web/dataconnect": could not find dataconnect.yaml in `/home/mst/Projects/noble/noble-web/dataconnect`
+E0201 11:01:01.005653  776074 watch.go:40] Failed to load config from "/home/mst/Projects/noble/noble-web/dataconnect": could not find dataconnect.yaml in `/home/mst/Projects/noble/noble-web/dataconnect`

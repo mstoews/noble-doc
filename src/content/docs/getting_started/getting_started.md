@@ -1,7 +1,6 @@
 ---
 title: Getting Started with Noble Ledger
 description: Setting up and creating your first journal entry
-
 ---
 
 ## Setting up the initial reference data

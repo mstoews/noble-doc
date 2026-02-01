@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
-import "~/styles/index.css";
+import "src/styles/index.css";
 ---
 
 <!--
@@ -10,7 +10,8 @@ import "~/styles/index.css";
 <button
   id="theme-switcher"
   type="button"
-  class="-ml-12 origin-[right_center] scale-0 transition-all duration-500">
+  class="-ml-12 origin-[right_center] scale-0 transition-all duration-500"
+>
   <div id="icon-theme-light">
     <Icon name="mdi:white-balance-sunny" class="size-6" />
     <span class="sr-only">Use light theme</span>
@@ -58,9 +59,8 @@ import "~/styles/index.css";
 </script>
 
 <style>
-  @reference "~/styles/index.css";
+  @reference "../styles/global.css";
   :global(.fixed-header) #theme-switcher {
     @apply ml-0 scale-100;
   }
-   
 </style>
