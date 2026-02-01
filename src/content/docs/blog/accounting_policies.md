@@ -10,7 +10,7 @@ For Canadian non-profits (NPOs) and condominium boards, financial oversight is c
 
 
 
-![Journal Update](../../../assets/astronaut.jpg)
+![Journal Update](../../../assets/images/nobleledger-edit.png)
 
 --- 
 
