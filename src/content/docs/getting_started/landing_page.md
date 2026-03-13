@@ -1,5 +1,5 @@
 ---
-title: Noble Ledger
+title: Noble Ledger Landing Page
 description: All-in-one accounting and management software for condominium corporations and nonprofits.
 ---
 

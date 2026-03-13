@@ -35,8 +35,8 @@ push:
 	@echo "push"
 	git push origin main
 
-.PHONY: deploy-cloud-run
-deploy-cloud-run:
+.PHONY: deploy-cloud
+deploy-cloud:
 	gcloud run deploy nobleledger-doc \
 		--source . \
 		--region us-central1 \

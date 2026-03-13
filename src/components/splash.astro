@@ -9,11 +9,11 @@ const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
 ---
 
-<section class="relative h-full bg-black">
+<section class="h-full w-full bg-slate-900">
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
   </div>
-  <div class="relative grid h-full place-items-center sm:grid-cols-2">
+  <div class="grid h-full place-items-center sm:grid-cols-1 bg-slate-900/50">
     <h2
       class="flex flex-col items-center gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"
     >
@@ -50,20 +50,6 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
 </noscript>
 
 <style>
-  @keyframes float {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-
-    100% {
-      transform: translate3d(0, 30px, 0);
-    }
-  }
-
-  #astronaut {
-    animation: float linear 2.5s infinite alternate;
-  }
-
   @media (prefers-reduced-motion: reduce) {
     #astronaut {
       @apply animate-none;
