@@ -51,6 +51,7 @@ import "../styles/index.css";
   button.addEventListener("click", () => {
     const themeNext = getThemeNext();
     document.documentElement.dataset.theme = themeNext;
+    document.documentElement.classList.toggle("dark", themeNext === "dark");
     localStorage.setItem("theme", themeNext);
     updateIcon();
   });

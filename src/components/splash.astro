@@ -9,11 +9,11 @@ const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
 ---
 
-<section class="h-full w-full bg-slate-900">
+<section class="h-full w-full bg-slate-100 dark:bg-slate-900">
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
   </div>
-  <div class="grid h-full place-items-center lg:grid-cols-2 bg-slate-900">
+  <div class="grid place-items-center py-12 lg:h-full lg:py-0 lg:grid-cols-2 bg-slate-100 dark:bg-slate-900">
     <h2
       class="flex flex-col items-center gap-2 sm:gap-4 justify-self-center lg:justify-self-end"
     >
@@ -27,10 +27,10 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     </h2>
     <div
       id="astronaut"
-      class="w-1/3 max-w-3xl sm:w-8/12 justify-self-center lg:justify-self-start"
+      class="w-full max-w-md px-6 sm:w-8/12 sm:px-0 justify-self-center lg:justify-self-start"
     >
       <Image
-        class="ml-6 h-full w-full object-cover"
+        class="h-full w-full object-cover"
         src={dashboard}
         widths={widths}
         sizes={sizes}

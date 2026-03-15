@@ -18,7 +18,7 @@ const description =
 ---
 
 <!doctype html>
-<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
+<html lang="en" class="h-full motion-safe:scroll-smooth dark" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -40,22 +40,25 @@ const description =
     <script is:inline>
       const themeSaved = localStorage.getItem("theme");
 
+      const applyTheme = (theme) => {
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.classList.toggle("dark", theme === "dark");
+      };
+
       if (themeSaved) {
-        document.documentElement.dataset.theme = themeSaved;
+        applyTheme(themeSaved);
       } else {
         const prefersDark = window.matchMedia(
           "(prefers-color-scheme: dark)",
         ).matches;
-        document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
+        applyTheme(prefersDark ? "dark" : "light");
       }
 
       window
         .matchMedia("(prefers-color-scheme: dark)")
         .addEventListener("change", (event) => {
           if (!localStorage.getItem("theme")) {
-            document.documentElement.dataset.theme = event.matches
-              ? "dark"
-              : "light";
+            applyTheme(event.matches ? "dark" : "light");
           }
         });
     </script>
