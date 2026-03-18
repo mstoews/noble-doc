@@ -57,6 +57,18 @@ export default defineConfig({
           autogenerate: { directory: "guides" },
         },
         {
+          label: "Condominium Law",
+          autogenerate: { directory: "condo_law" },
+        },
+        {
+          label: "Reference",
+          autogenerate: { directory: "reference" },
+        },
+        {
+          label: "FAQ",
+          autogenerate: { directory: "faq" },
+        },
+        {
           label: "Company Policies",
           autogenerate: { directory: "policy" },
         },
