@@ -1,5 +1,5 @@
 ---
-title: What is Fund Accounting and Why Does it Matter for Your Condo Corp?
+title: What is Fund Accounting?
 description: Learn how fund accounting keeps your operating and reserve funds separate — and why general accounting software falls short for condominium corporations.
 ---
 

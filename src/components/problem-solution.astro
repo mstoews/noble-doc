@@ -1,0 +1,103 @@
+---
+import { Icon } from "astro-icon/components";
+import ContentSection from "./content-section.astro";
+
+interface Row {
+  icon: string;
+  problem: string;
+  solution: string;
+}
+
+const rows: Row[] = [
+  {
+    icon: "mdi:email-alert-outline",
+    problem: "Dual-signature cheques lost in the mail, delayed for weeks.",
+    solution: "Approve EFTs from your phone, settled through Plaid in days.",
+  },
+  {
+    icon: "mdi:history",
+    problem: "No audit trail — who approved what, when, and why?",
+    solution: "Every action logged with role, timestamp, and reason for 180 days.",
+  },
+  {
+    icon: "mdi:calculator-variant-outline",
+    problem: "Bank reconciliation done by hand, once a month, if at all.",
+    solution: "Transactions post and reconcile against the bank feed continuously.",
+  },
+  {
+    icon: "mdi:chart-line-variant",
+    problem: "Reserve fund tracked in a spreadsheet nobody maintains.",
+    solution: "Reserve fund is a first-class line on every report and statement.",
+  },
+  {
+    icon: "mdi:file-document-multiple-outline",
+    problem: "Audit season means weeks of binder-building and phone calls.",
+    solution: "One click produces the audit package — mapped and cross-referenced.",
+  },
+];
+---
+
+<ContentSection title="Cheques, binders, and spreadsheets" id="problem-solution">
+  <Fragment slot="lead">
+    Most condo boards still run on paper. Noble Ledger replaces the rituals that
+    cost volunteers their evenings — without asking them to learn accounting.
+  </Fragment>
+
+  <div class="grid w-full max-w-6xl grid-cols-1 gap-6 lg:grid-cols-2">
+    <article
+      class="relative flex flex-col gap-4 border border-default bg-offset p-6"
+      aria-labelledby="ps-problem"
+    >
+      <header class="flex items-center gap-3">
+        <span
+          class="inline-flex size-10 items-center justify-center rounded-full bg-red-500/10 text-red-600 dark:text-red-400"
+        >
+          <Icon name="mdi:close-thick" class="size-5" aria-hidden="true" />
+        </span>
+        <h3 id="ps-problem" class="text-2xl font-extrabold">The old way</h3>
+      </header>
+      <ul class="flex flex-col gap-4">
+        {
+          rows.map(({ icon, problem }) => (
+            <li class="flex items-start gap-3 text-base text-offset">
+              <Icon
+                name={icon}
+                class="mt-0.5 size-5 shrink-0 text-red-500/70"
+                aria-hidden="true"
+              />
+              <span>{problem}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </article>
+
+    <article
+      class="relative flex flex-col gap-4 border-2 border-indigo-500 bg-offset p-6 shadow-lg shadow-indigo-500/10"
+      aria-labelledby="ps-solution"
+    >
+      <header class="flex items-center gap-3">
+        <span
+          class="inline-flex size-10 items-center justify-center rounded-full bg-indigo-500/15 text-indigo-600 dark:text-indigo-400"
+        >
+          <Icon name="mdi:check-bold" class="size-5" aria-hidden="true" />
+        </span>
+        <h3 id="ps-solution" class="text-2xl font-extrabold">With Noble Ledger</h3>
+      </header>
+      <ul class="flex flex-col gap-4">
+        {
+          rows.map(({ icon, solution }) => (
+            <li class="flex items-start gap-3 text-base">
+              <Icon
+                name={icon}
+                class="mt-0.5 size-5 shrink-0 text-indigo-500"
+                aria-hidden="true"
+              />
+              <span>{solution}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </article>
+  </div>
+</ContentSection>

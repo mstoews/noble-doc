@@ -1,6 +1,6 @@
 ---
-title: Noble Web 
-description: Nobel Ledger - Application Overview 
+title: Application Overview
+description: Noble Ledger - Application Overview 
 ---
 
 <!-- # Noble Web — Application Overview -->

@@ -5,45 +5,53 @@ import type { FooterLink } from "../types";
 
 const links: Array<FooterLink> = [
   {
-    url: "https://astro.build/",
-    description: "Astro's official website",
+    url: "/",
+    description: "Noble Ledger home",
     icon: "mdi:home",
   },
   {
-    url: "https://github.com/mhyfritz/astro-landing-page",
-    description: "View source on GitHub",
-    icon: "fa-brands:github-alt",
+    url: "/getting_started/landing_page",
+    description: "Documentation",
+    icon: "mdi:book-open-variant",
   },
   {
-    url: "https://astro.build/chat",
-    description: "Astro on Discord",
-    icon: "fa-brands:discord",
+    url: "/policy/private",
+    description: "Privacy Policy",
+    icon: "mdi:shield-lock-outline",
   },
   {
-    url: "https://twitter.com/astrodotbuild",
-    description: "Astro on Twitter",
-    icon: "fa-brands:twitter",
+    url: "/policy/security",
+    description: "Security Policy",
+    icon: "mdi:security",
   },
 ];
+
+const year = new Date().getFullYear();
 ---
 
-<footer class="relative flex h-64 items-center justify-center">
+<footer class="relative flex min-h-16 items-center justify-center py-4">
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
-    {
-      links.map((link) => (
-        <li>
-          <a
-            class="flex size-16 items-center justify-center rounded-full border-2 border-current p-4"
-            href={link.url}
-          >
-            <span class="sr-only">{link.description}</span>
-            <Icon class="size-full" name={link.icon} />
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+  <div class="relative flex flex-col items-center gap-2 text-sm">
+    <nav aria-label="Footer">
+      <ul class="flex flex-wrap items-center justify-center gap-4">
+        {
+          links.map((link) => (
+            <li>
+              <a
+                href={link.url}
+                aria-label={link.description}
+                class="inline-flex items-center gap-1 hover:underline"
+              >
+                <Icon name={link.icon} class="h-4 w-4" aria-hidden="true" />
+                <span>{link.description}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <p class="text-xs opacity-80">© {year} Noble Ledger. All rights reserved.</p>
+  </div>
 </footer>

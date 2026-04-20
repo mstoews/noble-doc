@@ -10,6 +10,7 @@ import starlightBlog from "starlight-blog";
 // https://astro.build/config
 // @ts-ignore
 export default defineConfig({
+  site: "https://nbl.nobleledger.com",
   vite: {
     // @ts-ignore
     plugins: [tailwindcss()],
@@ -39,6 +40,17 @@ export default defineConfig({
         src: "./src/assets/chess_board.png",
         alt: "Noble Ledger Logo",
       },
+      lastUpdated: true,
+      editLink: {
+        baseUrl: "https://github.com/mstoews/noble-doc/edit/main/",
+      },
+      social: [
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/mstoews/noble-doc",
+        },
+      ],
       sidebar: [
         {
           label: "Start Here",
