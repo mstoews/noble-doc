@@ -1,0 +1,7 @@
+# Keep .git in the source upload so the build can stamp the commit hash
+# into the footer (src/data/build-info.ts). Without this file, gcloud
+# auto-generates an ignore list that strips .git.
+node_modules
+dist
+.astro
+.netlify
