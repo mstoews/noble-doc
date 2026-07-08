@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 import HeroImage from "./hero-image.astro";
 import type { FooterLink } from "../types";
+import { buildInfo } from "../data/build-info";
 
 const links: Array<FooterLink> = [
   {
@@ -52,6 +53,8 @@ const year = new Date().getFullYear();
         }
       </ul>
     </nav>
-    <p class="text-xs opacity-80">© {year} Noble Ledger. All rights reserved.</p>
+    <p class="text-xs opacity-80">
+      © {year} Noble Ledger. All rights reserved. · {buildInfo}
+    </p>
   </div>
 </footer>

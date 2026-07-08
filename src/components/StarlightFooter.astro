@@ -1,0 +1,15 @@
+---
+import Default from "@astrojs/starlight/components/Footer.astro";
+import { buildInfo } from "../data/build-info";
+---
+
+<Default><slot /></Default>
+<p class="build-info">{buildInfo}</p>
+
+<style>
+  .build-info {
+    margin-top: 1rem;
+    font-size: var(--sl-text-xs);
+    color: var(--sl-color-gray-3);
+  }
+</style>
