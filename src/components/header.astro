@@ -1,83 +1,67 @@
 ---
 import { Icon } from "astro-icon/components";
-import ThemeSwitcher from "./theme-switcher.astro";
+import Brand from "./brand.astro";
 import type { NavItem } from "../types";
 
 const navItems: Array<NavItem> = [
   { title: "Features", url: "#features" },
   { title: "Implementation", url: "#implementation" },
   { title: "Pricing", url: "#pricing" },
-  { title: "Documentations", url: "getting_started/landing_page" },
-  { title: "Blog", url: "blog" },
+  { title: "Docs", url: "/getting_started/landing_page" },
+  { title: "Blog", url: "/blog" },
 ];
 ---
 
-<header
-  id="page-header"
-  class="fixed top-0 z-20 flex w-full items-center justify-between border-b border-default/10 bg-default/80 px-8 py-4 text-default backdrop-blur"
->
-  <a class="flex items-center gap-3 hover:!text-default" href="#">
-    <h1 class="sr-only">Astro</h1>
-  </a>
-  <div>
-    <div class="flex items-center gap-6">
-      <nav class="hidden sm:block">
-        <ul class="flex items-center gap-6">
-          {
-            navItems.map(({ title, url }) => (
-              <li>
-                <a class="text-sm" href={url}>
-                  {title}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </nav>
-      <button
-        id="open-nav-button"
-        type="button"
-        class="btn sm:hidden"
-        aria-label="Navigation"
-      >
-        <Icon name="mdi:menu" class="size-8" />
-      </button>
-      <ThemeSwitcher />
+<header id="page-header" class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <Brand />
+    </a>
+    <nav class="nav" aria-label="Main">
+      {navItems.map(({ title, url }) => <a href={url}>{title}</a>)}
+    </nav>
+    <div class="actions" style="display:flex;gap:10px;align-items:center">
+      <a class="btn ghost" href="https://nobleledger.com">Sign in</a>
+      <a class="btn" href="https://nobleledger.com">Try it out</a>
     </div>
-    <div id="menu-modal" class="modal hidden" aria-hidden="true">
-      <div class="fixed inset-0 bg-default px-8 py-4 text-default">
-        <div class="space-y-4" role="dialog" aria-modal="true">
-          <header class="text-right">
-            <button
-              id="close-nav-button"
-              type="button"
-              class="btn"
-              aria-label="Close navigation"
-            >
-              <Icon name="mdi:close" class="size-8" />
-            </button>
-          </header>
-          <div class="flex justify-center">
-            <Icon name="logomark" class="size-16" />
-          </div>
-          <nav>
-            <ul class="flex flex-col">
-              {
-                navItems.map(({ title, url }) => (
-                  <li>
-                    <a class="block py-4 text-center text-xl" href={url}>
-                      {title}
-                    </a>
-                  </li>
-                ))
-              }
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
+    <button
+      id="open-nav-button"
+      type="button"
+      class="icon-btn menu-toggle"
+      aria-label="Navigation"
+    >
+      <Icon name="mdi:menu" class="size-7" />
+    </button>
   </div>
 </header>
+
+{/* Kept outside .topbar: its backdrop-filter would become the containing
+    block for this fixed-position sheet, clipping it to the 66px bar. */}
+<div id="menu-modal" class="nav-modal" aria-hidden="true">
+  <div class="sheet" role="dialog" aria-modal="true">
+    <header style="text-align:right">
+      <button
+        id="close-nav-button"
+        type="button"
+        class="icon-btn"
+        aria-label="Close navigation"
+      >
+        <Icon name="mdi:close" class="size-7" />
+      </button>
+    </header>
+    <nav aria-label="Main">
+      <ul style="list-style:none;margin:0;padding:0">
+        {
+          navItems.map(({ title, url }) => (
+            <li>
+              <a href={url}>{title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</div>
 
 <script>
   import MicroModal from "micromodal";
@@ -85,12 +69,10 @@ const navItems: Array<NavItem> = [
 
   const menuModalId = "menu-modal";
 
-  const header = document.querySelector("#page-header") as HTMLElement;
   const menu = document.querySelector(`#${menuModalId} ul`);
   const openNavButton = document.querySelector("#open-nav-button");
   const closeNavButton = document.querySelector("#close-nav-button");
 
-  invariant(header, "header should not be null");
   invariant(menu, "menu should not be null");
   invariant(openNavButton, "openNavButton should not be null");
   invariant(closeNavButton, "closeNavButton should not be null");
@@ -120,10 +102,3 @@ const navItems: Array<NavItem> = [
     }
   </style>
 </noscript>
-
-<style>
-  @reference "../styles/global.css";
-  .modal.is-open {
-    @apply block;
-  }
-</style>

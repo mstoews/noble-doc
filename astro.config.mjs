@@ -39,6 +39,23 @@ export default defineConfig({
       components: {
         Footer: "./src/components/StarlightFooter.astro",
       },
+      customCss: [
+        "@fontsource-variable/newsreader/index.css",
+        "@fontsource-variable/newsreader/wght-italic.css",
+        "@fontsource/ibm-plex-sans/400.css",
+        "@fontsource/ibm-plex-sans/500.css",
+        "@fontsource/ibm-plex-sans/600.css",
+        "@fontsource/ibm-plex-mono/400.css",
+        "@fontsource/ibm-plex-mono/500.css",
+        "./src/styles/starlight.css",
+      ],
+      expressiveCode: {
+        themes: ["vitesse-dark"],
+        styleOverrides: {
+          borderRadius: "5px",
+          borderColor: "var(--rule-ink)",
+        },
+      },
       logo: {
         src: "./src/assets/chess_board.png",
         alt: "Noble Ledger Logo",

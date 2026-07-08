@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noble Ledger — unified design direction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0E131C; --ink-2:#151C28; --ink-3:#1D2634;
+  --paper:#F3EEE1; --paper-2:#FBF8F0;
+  --brass:#C79A3D; --brass-soft:#E4CD93; --brass-deep:#8A6A22;
+  --led-green:#3E8E6E; --led-red:#C0503F;
+  --on-ink:#EAE6D9; --on-ink-dim:#98A0AE;
+  --on-paper:#20242C; --on-paper-dim:#5B616B;
+  --rule-ink:rgba(199,154,61,.16); --rule-paper:rgba(30,20,0,.12);
+  --display:'Newsreader',Georgia,serif;
+  --body:'IBM Plex Sans',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--on-ink);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.1;margin:0}
+.mono{font-family:var(--mono)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 32px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin:0 0 18px}
+
+/* ---- top bar ---- */
+.topbar{position:sticky;top:0;z-index:20;background:rgba(14,19,28,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule-ink)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--display);font-size:20px;font-weight:600;letter-spacing:.01em}
+.mark{width:30px;height:30px;flex:none}
+.nav{display:flex;gap:30px;font-size:14px;color:var(--on-ink-dim)}
+.nav a:hover{color:var(--on-ink)}
+.btn{font-family:var(--body);font-size:14px;font-weight:500;padding:9px 18px;border-radius:3px;border:1px solid var(--brass);color:var(--ink);background:var(--brass);cursor:pointer;transition:.15s}
+.btn:hover{background:var(--brass-soft);border-color:var(--brass-soft)}
+.btn.ghost{background:transparent;color:var(--on-ink);border-color:var(--rule-ink)}
+.btn.ghost:hover{border-color:var(--brass);color:var(--brass-soft)}
+
+/* ---- hero ---- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--rule-ink)}
+.hero .rules{position:absolute;inset:0;background:repeating-linear-gradient(to bottom,transparent 0,transparent 47px,var(--rule-ink) 47px,var(--rule-ink) 48px);opacity:.6;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:96px 32px 104px}
+.hero h1{font-size:60px;letter-spacing:-.015em;margin:0 0 24px}
+.hero h1 em{font-style:italic;color:var(--brass-soft)}
+.hero p.lead{font-size:19px;color:var(--on-ink-dim);max-width:30em;margin:0 0 34px}
+.hero .cta{display:flex;gap:14px;align-items:center}
+.hero .meta{margin-top:40px;display:flex;gap:34px;font-family:var(--mono);font-size:12px;color:var(--on-ink-dim);letter-spacing:.04em}
+.hero .meta b{display:block;font-family:var(--display);font-size:26px;font-weight:600;color:var(--on-ink);letter-spacing:0}
+
+/* ---- ledger card (signature) ---- */
+.ledger{background:var(--ink-2);border:1px solid var(--rule-ink);border-radius:5px;overflow:hidden;box-shadow:0 30px 80px -40px rgba(0,0,0,.8)}
+.ledger .lh{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid var(--rule-ink)}
+.ledger .lh span{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--on-ink-dim)}
+.ledger .lh .seal{width:22px;height:22px;color:var(--brass)}
+.row{display:grid;grid-template-columns:1fr auto;gap:16px;padding:13px 22px;border-bottom:1px solid var(--rule-ink);align-items:baseline}
+.row:last-child{border-bottom:0}
+.row .acct{font-size:14px;color:var(--on-ink)}
+.row .acct small{display:block;font-family:var(--mono);font-size:11px;color:var(--on-ink-dim);letter-spacing:.05em;margin-top:2px}
+.row .amt{font-family:var(--mono);font-size:15px;font-variant-numeric:tabular-nums;color:var(--on-ink)}
+.row .amt.pos{color:var(--led-green)}
+.row .amt.neg{color:var(--led-red)}
+.row.total{background:rgba(199,154,61,.06)}
+.row.total .acct{font-weight:600}
+.row.total .amt{color:var(--brass-soft);font-weight:500}
+
+/* ---- feature strip ---- */
+.section{padding:92px 0;border-bottom:1px solid var(--rule-ink)}
+.section .head{max-width:40em;margin-bottom:52px}
+.section h2{font-size:38px;letter-spacing:-.01em;margin-bottom:16px}
+.section .head p{color:var(--on-ink-dim);font-size:17px;margin:0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr)}
+.feat{padding:30px 30px 34px;border-left:1px solid var(--rule-ink)}
+.feat:first-child{border-left:0;padding-left:0}
+.feat:last-child{padding-right:0}
+.feat .no{font-family:var(--mono);font-size:12px;color:var(--brass);letter-spacing:.1em}
+.feat h3{font-size:21px;margin:14px 0 10px}
+.feat p{color:var(--on-ink-dim);font-size:15px;margin:0}
+
+/* ---- docs section: the ledger-paper surface ---- */
+.docs{background:var(--paper);color:var(--on-paper);border-bottom:1px solid var(--rule-ink)}
+.docs .wrap{padding:70px 32px 90px}
+.docs .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass-deep);margin-bottom:14px}
+.docs .kicker span{color:var(--on-paper-dim)}
+.docs h2{color:var(--on-paper);font-size:34px;margin-bottom:8px}
+.docs>.wrap>p.sub{color:var(--on-paper-dim);margin:0 0 40px;max-width:44em}
+.doc-frame{background:var(--paper-2);border:1px solid var(--rule-paper);border-radius:6px;overflow:hidden;display:grid;grid-template-columns:220px 1fr 190px;min-height:440px}
+.dside{border-right:1px solid var(--rule-paper);padding:26px 20px;font-size:13.5px}
+.dside .grp{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--on-paper-dim);margin:22px 0 10px}
+.dside .grp:first-child{margin-top:0}
+.dside a{display:block;padding:6px 10px;border-radius:3px;color:var(--on-paper);opacity:.82}
+.dside a:hover{background:rgba(30,20,0,.05);opacity:1}
+.dside a.on{background:rgba(199,154,61,.16);color:var(--brass-deep);opacity:1;font-weight:500;box-shadow:inset 2px 0 0 var(--brass)}
+.dmain{padding:34px 40px}
+.dmain .crumb{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--on-paper-dim);margin-bottom:16px}
+.dmain h1.dt{font-family:var(--display);font-size:32px;font-weight:600;color:var(--on-paper);margin:0 0 6px}
+.dmain .dt-sub{color:var(--on-paper-dim);font-size:15px;margin:0 0 26px;padding-bottom:22px;border-bottom:1px solid var(--rule-paper)}
+.dmain h3.ds{font-family:var(--display);font-size:20px;font-weight:600;margin:28px 0 10px;color:var(--on-paper)}
+.dmain p{font-size:14.5px;line-height:1.75;color:#33383F;margin:0 0 14px}
+.dmain code.ic{font-family:var(--mono);font-size:12.5px;background:rgba(30,20,0,.07);padding:1px 6px;border-radius:3px;color:var(--brass-deep)}
+.code{background:var(--ink);border-radius:5px;overflow:hidden;margin:18px 0 6px}
+.code .cbar{display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-bottom:1px solid var(--rule-ink)}
+.code .cbar span{font-family:var(--mono);font-size:11px;color:var(--on-ink-dim);letter-spacing:.05em}
+.code .cbar i{width:10px;height:10px;border-radius:50%;background:var(--brass);display:inline-block;opacity:.5}
+.code pre{margin:0;padding:16px 18px;font-family:var(--mono);font-size:13px;line-height:1.7;color:var(--on-ink);overflow-x:auto}
+.code .k{color:var(--brass-soft)}.code .s{color:#8FBF9E}.code .c{color:var(--on-ink-dim)}
+.callout{border-left:3px solid var(--brass);background:rgba(199,154,61,.09);padding:12px 16px;border-radius:0 4px 4px 0;font-size:14px;margin:18px 0}
+.callout b{color:var(--brass-deep)}
+.dtoc{border-left:1px solid var(--rule-paper);padding:34px 22px;font-size:13px}
+.dtoc .tt{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--on-paper-dim);margin-bottom:14px}
+.dtoc a{display:block;padding:5px 0;color:var(--on-paper-dim)}
+.dtoc a.on{color:var(--brass-deep);font-weight:500}
+.dtoc a:hover{color:var(--on-paper)}
+
+/* ---- footer ---- */
+.foot{padding:54px 0 60px}
+.foot .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+.foot .brand{font-size:17px}
+.foot p{color:var(--on-ink-dim);font-family:var(--mono);font-size:12px;letter-spacing:.04em;margin:0}
+
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:44px;padding:64px 24px 72px}
+  .hero h1{font-size:42px}
+  .grid3{grid-template-columns:1fr}
+  .feat{border-left:0;border-top:1px solid var(--rule-ink);padding:26px 0}
+  .feat:first-child{border-top:0}
+  .doc-frame{grid-template-columns:1fr}
+  .dside,.dtoc{display:none}
+  .nav{display:none}
+  .wrap{padding:0 22px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar"><div class="wrap">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 32 32" fill="none"><rect x="1" y="1" width="30" height="30" rx="4" stroke="var(--brass)" stroke-width="1.4"/><path d="M11 23h10M12 23v-3l-1.6-1.2 1.2-1.8h1.2V13h-1.4l1.6-2.4h4.4L19 13h-1.4v3h1.2l1.2 1.8L18.4 20v3" stroke="var(--brass)" stroke-width="1.4" stroke-linejoin="round"/></svg>
+    Noble Ledger
+  </div>
+  <nav class="nav">
+    <a href="#">Product</a><a href="#">Pricing</a><a href="#docs">Docs</a><a href="#">Company</a>
+  </nav>
+  <div style="display:flex;gap:10px;align-items:center">
+    <a class="btn ghost" href="#">Sign in</a>
+    <a class="btn" href="#">Book a demo</a>
+  </div>
+</div></header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="rules"></div>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Condominium accounting, settled</p>
+      <h1>The ledger your board can <em>actually</em> trust.</h1>
+      <p class="lead">Reserve funds, unit ledgers, and audit-ready statements in one place — reconciled to the penny, reported in plain language.</p>
+      <div class="cta">
+        <a class="btn" href="#">Book a demo</a>
+        <a class="btn ghost" href="#docs">Read the docs</a>
+      </div>
+      <div class="meta">
+        <div><b>2,400+</b>units under ledger</div>
+        <div><b>$0.00</b>average variance</div>
+        <div><b>SK · AB · BC</b>compliance built in</div>
+      </div>
+    </div>
+    <div class="ledger" aria-label="Sample balance sheet">
+      <div class="lh">
+        <span>Statement of financial position</span>
+        <svg class="seal" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.3"/><path d="M12 7v10M9 9.5c0-1.4 1.3-2 3-2s3 .8 3 2-1.3 2-3 2-3 .8-3 2 1.3 2 3 2 3-.6 3-2" stroke="currentColor" stroke-width="1.3"/></svg>
+      </div>
+      <div class="row"><div class="acct">Operating account<small>RBC · 0041</small></div><div class="amt pos">142,908.14</div></div>
+      <div class="row"><div class="acct">Reserve fund<small>GIC laddered · 5 yr</small></div><div class="amt pos">986,220.00</div></div>
+      <div class="row"><div class="acct">Receivables — 3 units<small>30–60 days</small></div><div class="amt neg">(4,150.00)</div></div>
+      <div class="row"><div class="acct">Contractor holdback<small>Roofing · phase 2</small></div><div class="amt neg">(22,500.00)</div></div>
+      <div class="row total"><div class="acct">Net position</div><div class="amt">1,102,478.14</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section"><div class="wrap">
+  <div class="head">
+    <p class="eyebrow">Built for the people who sign the statements</p>
+    <h2>Every entry accounted for, every report defensible.</h2>
+    <p>Noble Ledger keeps the double-entry discipline of proper accounting while speaking the language boards and managers understand.</p>
+  </div>
+  <div class="grid3">
+    <div class="feat"><div class="no">01</div><h3>Reserve fund studies</h3><p>Model contributions against the 30-year plan and see the shortfall before the special assessment does.</p></div>
+    <div class="feat"><div class="no">02</div><h3>Unit-level ledgers</h3><p>Every owner's balance, fee, and interest charge traceable to a source document in two clicks.</p></div>
+    <div class="feat"><div class="no">03</div><h3>Audit-ready exports</h3><p>Year-end packages your auditor accepts as-is — statements, schedules, and reconciliations included.</p></div>
+  </div>
+</div></section>
+
+<!-- DOCS -->
+<section class="docs" id="docs"><div class="wrap">
+  <p class="kicker">The docs · <span>same ledger, in daylight</span></p>
+  <h2>Documentation that reads like the product.</h2>
+  <p class="sub">The Starlight docs inherit the ruled-line grid, the brass accent, and the same typographic voice — rendered on a warm ledger-paper surface tuned for long reading.</p>
+
+  <div class="doc-frame">
+    <aside class="dside">
+      <div class="grp">Start here</div>
+      <a href="#">Introduction</a>
+      <a href="#" class="on">Getting started</a>
+      <a href="#">Core concepts</a>
+      <div class="grp">Accounting</div>
+      <a href="#">Chart of accounts</a>
+      <a href="#">Reconciliation</a>
+      <a href="#">Reserve funds</a>
+      <div class="grp">Condominium law</div>
+      <a href="#">Saskatchewan</a>
+      <a href="#">Alberta</a>
+      <div class="grp">Reference</div>
+      <a href="#">API</a>
+      <a href="#">Exports</a>
+    </aside>
+
+    <main class="dmain">
+      <div class="crumb">Start here / Getting started</div>
+      <h1 class="dt">Getting started</h1>
+      <p class="dt-sub">Set up your first corporation, import balances, and post an opening entry in under ten minutes.</p>
+
+      <h3 class="ds">Create the corporation</h3>
+      <p>Each condominium corporation gets its own isolated ledger. Run <code class="ic">nbl init</code> and Noble Ledger scaffolds a chart of accounts pre-mapped to your province's reporting requirements.</p>
+
+      <div class="code">
+        <div class="cbar"><span>terminal</span><i></i></div>
+        <pre><span class="c"># create a corporation ledger for Saskatchewan</span>
+<span class="k">nbl</span> init --corp <span class="s">"Maple Court CC-4821"</span> --region <span class="s">SK</span></pre>
+      </div>
+
+      <div class="callout"><b>Note.</b> Opening balances must reconcile to your prior auditor's closing statement before the ledger will accept its first posting.</div>
+
+      <h3 class="ds">Import opening balances</h3>
+      <p>Bring in operating and reserve balances from a CSV or your previous system. Noble Ledger validates that debits equal credits before anything is committed.</p>
+    </main>
+
+    <nav class="dtoc">
+      <div class="tt">On this page</div>
+      <a href="#" class="on">Create the corporation</a>
+      <a href="#">Import opening balances</a>
+      <a href="#">Post an opening entry</a>
+      <a href="#">Next steps</a>
+    </nav>
+  </div>
+</div></section>
+
+<!-- FOOTER -->
+<footer class="foot"><div class="wrap">
+  <div class="brand">
+    <svg class="mark" viewBox="0 0 32 32" fill="none"><rect x="1" y="1" width="30" height="30" rx="4" stroke="var(--brass)" stroke-width="1.4"/><path d="M11 23h10M12 23v-3l-1.6-1.2 1.2-1.8h1.2V13h-1.4l1.6-2.4h4.4L19 13h-1.4v3h1.2l1.2 1.8L18.4 20v3" stroke="var(--brass)" stroke-width="1.4" stroke-linejoin="round"/></svg>
+    Noble Ledger
+  </div>
+  <p>© 2026 Noble Ledger · nbl.nobleledger.com</p>
+</div></footer>
+
+</body>
+</html>
