@@ -1,64 +1,63 @@
 ---
-import { Icon } from "astro-icon/components";
 import ContentSection from "../components/content-section.astro";
-import type { FeatureItem } from "../types";
 
-const features: Array<FeatureItem> = [
+interface Feature {
+  title: string;
+  description: string;
+}
+
+const features: Array<Feature> = [
   {
-    title: "Follows general accounting principles",
+    title: "Proper double-entry accounting",
     description:
-      "Noble Ledger is built on the principles of double-entry accounting, ensuring that all transactions are recorded accurately and transparently.",
-    icon: "mdi:book-open-variant",
+      "Built on the discipline of double-entry bookkeeping, so every transaction is recorded accurately and transparently.",
   },
   {
     title: "Financial reports",
     description:
-      "Generate financial reports such as balance sheets, income statements, and cash flow statements to help you understand your organization's financial health.",
-    icon: "mdi:file-document",
+      "Balance sheets, income statements, and cash flow statements that show your corporation's financial health at a glance.",
   },
   {
-    title: "Manage Artifact Documents",
+    title: "Document management",
     description:
-      "Easily manage and store important documents related to your condominium non-profit, such as meeting minutes, bylaws, and financial statements.",
-    icon: "mdi:folder-account",
+      "Meeting minutes, bylaws, and statements stored alongside the ledger entries they support.",
   },
   {
-    title: "Cloud Native and Secure",
+    title: "Cloud native",
     description:
-      "Noble Ledger is built on a cloud-native architecture, ensuring that your data is secure and accessible from anywhere.",
-    icon: "mdi:cloud-check",
+      "Built on a cloud-native architecture, so your data is available from anywhere the board happens to be.",
   },
   {
-    title: "Secure and Private",
+    title: "Secure and private",
     description:
-      "Noble Ledger is designed with security and privacy in mind, ensuring that your data is protected and only accessible to authorized users.",
-    icon: "mdi:shield-lock",
+      "Designed with security and privacy in mind — your data is protected and visible only to authorized users.",
   },
   {
-    title: "Support and Community",
+    title: "Support and community",
     description:
-      "Join a community of users and developers who are passionate about improving the Noble Ledger experience. Get support, share ideas, and collaborate on new features.",
-    icon: "mdi:account-group",
+      "A community of users and developers improving Noble Ledger together. Get support, share ideas, collaborate.",
   },
 ];
 ---
 
-<ContentSection title="Noble Ledger Features" id="features">
+<ContentSection
+  eyebrow="Built for the people who sign the statements"
+  title="Every entry accounted for, every report defensible."
+  id="features"
+>
   <Fragment slot="lead">
-    Noble Ledger is a powerful accounting and management tool specifically designed for the needs of 
-    condominium non-profits. It offers a comprehensive set of features to help organizations manage their finances.
+    Noble Ledger keeps the double-entry discipline of proper accounting while
+    speaking the language boards and managers understand.
   </Fragment>
-  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  <div class="grid3">
     {
-      features.map(({ title, description, icon }) => (
-        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
-          <div class="size-16 rounded-full border-2 border-current p-3">
-            <Icon name={icon} class="size-full" />
-          </div>
-          <p class="text-center font-extrabold text-xl">{title}</p>
-          <p class="text-center text-offset text-sm">{description}</p>
-        </li>
+      features.map(({ title, description }, i) => (
+        <div class="feat">
+          <div class="no">{String(i + 1).padStart(2, "0")}</div>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
       ))
     }
-  </ul>
+  </div>
 </ContentSection>

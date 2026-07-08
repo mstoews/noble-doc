@@ -1,0 +1,128 @@
+/* Noble Ledger Starlight theme — maps the design tokens onto Starlight.
+   Dark mode = ink, light mode = ledger paper.
+   Source of truth: docs/design/noble-ledger-design.html */
+@import "./theme.css";
+
+:root {
+  --sl-font: "IBM Plex Sans", system-ui, sans-serif;
+  --sl-font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* dark = ink */
+  --sl-color-white: #eae6d9;
+  --sl-color-gray-1: #d9d5c8;
+  --sl-color-gray-2: #b8b4a8;
+  --sl-color-gray-3: #98a0ae;
+  --sl-color-gray-4: #5f6772;
+  --sl-color-gray-5: #2a3340;
+  --sl-color-gray-6: #151c28;
+  --sl-color-gray-7: #10161f;
+  --sl-color-black: #0e131c;
+  --sl-color-accent-low: #35290f;
+  --sl-color-accent: #c79a3d;
+  --sl-color-accent-high: #e4cd93;
+  --sl-color-bg-nav: rgba(14, 19, 28, 0.92);
+  --sl-color-hairline: var(--rule-ink);
+  --sl-color-hairline-light: var(--rule-ink);
+  --sl-color-hairline-shade: var(--rule-ink);
+  --nl-accent-text: var(--brass-soft);
+}
+
+:root[data-theme="light"] {
+  /* light = ledger paper */
+  --sl-color-white: #20242c;
+  --sl-color-gray-1: #2b3036;
+  --sl-color-gray-2: #33383f;
+  --sl-color-gray-3: #5b616b;
+  --sl-color-gray-4: #8d9199;
+  --sl-color-gray-5: #d9d2bf;
+  --sl-color-gray-6: #fbf8f0;
+  --sl-color-gray-7: #ede7d6;
+  --sl-color-black: #f3eee1;
+  --sl-color-accent-low: #ecdfc0;
+  --sl-color-accent: #8a6a22;
+  --sl-color-accent-high: #6b5119;
+  --sl-color-bg-nav: rgba(243, 238, 225, 0.92);
+  --sl-color-hairline: var(--rule-paper);
+  --sl-color-hairline-light: var(--rule-paper);
+  --sl-color-hairline-shade: var(--rule-paper);
+  --nl-accent-text: var(--brass-deep);
+}
+
+/* ---- typography ---- */
+.site-title {
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--sl-color-white);
+}
+.sl-markdown-content :is(h1, h2, h3, h4),
+h1[data-page-title],
+.hero h1,
+.content-panel h1 {
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.sl-markdown-content {
+  line-height: 1.75;
+}
+.hero .tagline {
+  color: var(--sl-color-gray-3);
+}
+
+/* ---- sidebar ---- */
+.sidebar-content .group-label > span {
+  font-family: var(--mono);
+  font-size: var(--sl-text-2xs);
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--sl-color-gray-3);
+}
+.sidebar-content a {
+  border-radius: 3px;
+}
+.sidebar-content a[aria-current="page"],
+.sidebar-content a[aria-current="page"]:hover,
+.sidebar-content a[aria-current="page"]:focus {
+  background: var(--brass-tint);
+  color: var(--nl-accent-text);
+  font-weight: 500;
+  box-shadow: inset 2px 0 0 var(--brass);
+}
+
+/* ---- right sidebar (on this page) ---- */
+starlight-toc h2 {
+  font-family: var(--mono);
+  font-size: var(--sl-text-2xs);
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--sl-color-gray-3);
+}
+
+/* ---- asides ---- */
+.starlight-aside--note {
+  --sl-color-asides-text-accent: var(--nl-accent-text);
+  --sl-color-asides-border: var(--brass);
+  background-color: rgba(199, 154, 61, 0.09);
+}
+.starlight-aside--tip {
+  --sl-color-asides-text-accent: var(--led-green);
+  --sl-color-asides-border: var(--led-green);
+  background-color: rgba(62, 142, 110, 0.09);
+}
+.starlight-aside--caution,
+.starlight-aside--danger {
+  --sl-color-asides-text-accent: var(--led-red);
+  --sl-color-asides-border: var(--led-red);
+  background-color: rgba(192, 80, 63, 0.09);
+}
+
+/* ---- inline code ---- */
+.sl-markdown-content code:not(:where(.expressive-code *)) {
+  font-family: var(--mono);
+  color: var(--nl-accent-text);
+  background: var(--brass-tint);
+  border-radius: 3px;
+}

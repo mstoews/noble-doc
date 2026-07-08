@@ -1,19 +1,23 @@
-[data-theme="light"] {
-  --color-primary: theme("colors.pink.500");
-  --color-secondary: theme("colors.indigo.500");
-  --color-text: theme("colors.gray.900");
-  --color-text-offset: theme("colors.gray.600");
-  --color-background: theme("colors.gray.50");
-  --color-background-offset: theme("colors.gray.100");
-  --color-border: theme("colors.gray.900");
-}
-
-[data-theme="dark"] {
-  --color-primary: theme("colors.pink.400");
-  --color-secondary: theme("colors.indigo.400");
-  --color-text: theme("colors.gray.50");
-  --color-text-offset: theme("colors.gray.400");
-  --color-background: theme("colors.gray.900");
-  --color-background-offset: theme("colors.gray.800");
-  --color-border: theme("colors.gray.50" );
+/* Noble Ledger design tokens — source: docs/design/noble-ledger-design.html */
+:root {
+  --ink: #0e131c;
+  --ink-2: #151c28;
+  --ink-3: #1d2634;
+  --paper: #f3eee1;
+  --paper-2: #fbf8f0;
+  --brass: #c79a3d;
+  --brass-soft: #e4cd93;
+  --brass-deep: #8a6a22;
+  --led-green: #3e8e6e;
+  --led-red: #c0503f;
+  --on-ink: #eae6d9;
+  --on-ink-dim: #98a0ae;
+  --on-paper: #20242c;
+  --on-paper-dim: #5b616b;
+  --rule-ink: rgba(199, 154, 61, 0.16);
+  --rule-paper: rgba(30, 20, 0, 0.12);
+  --brass-tint: rgba(199, 154, 61, 0.16);
+  --display: "Newsreader Variable", Georgia, serif;
+  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
 }
