@@ -43,6 +43,19 @@ Many condo boards don't realize their finances are being managed without proper 
 
 <!-- EMBED: Add "See fund accounting in action" CTA linking to Living Sky Condominiums Corp fund summary view in free trial. -->
 
+## How Noble Ledger Does It
+
+Noble Ledger enforces fund separation in the ledger itself: every journal must
+balance *within each fund it touches*, so each fund carries a complete,
+standalone set of books. Owner dues are split between operating and reserve at
+the moment they are billed, transfers between funds post as visible
+due-to/due-from entries, and year-end rolls each fund's surplus into that
+fund's own balance.
+
+For the full walkthrough — including special assessments, reserve studies, and
+the period-close checklist — see
+[Fund Accounting for Condominium Corporations](/noble_ledger/condo_fund_accounting/).
+
 ---
 
 *Disclaimer: For general informational purposes only. Not legal, financial, accounting, or tax advice.*

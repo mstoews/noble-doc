@@ -18,6 +18,7 @@ New to Noble Ledger? The [Getting Started guide](/getting_started/getting_starte
 ### Features
 
 - **[Application Overview](/noble_ledger/application_overview)** — What Noble Ledger does, how it's built, and who it's for.
+- **[Fund Accounting for Condominium Corporations](/noble_ledger/condo_fund_accounting)** — The complete picture: self-balancing funds, inter-fund transfers, owner assessments with an operating/reserve split, special levies, reserve studies, and per-fund period close and year-end.
 - **[Condo Board Policies](/guides/condo_board_policies)** — Role-based access, approval workflows, data integrity controls, and lightning-fast reporting for boards and managers.
 - **[Payment Modernization](/blog/traditional_payments)** — Move beyond dual-signature cheques. Noble Ledger integrates with Plaid to support secure Electronic Funds Transfers (EFTs), reducing fraud risk and operational overhead.
 
