@@ -1,38 +1,42 @@
 ---
-title: Noble Ledger
-description: Getting Started with Noble Ledger
+title: Noble Ledger Documentation
+description: Practical guides for your books, your board, and your community.
 template: splash
 hero:
-  tagline: Congratulations! on coming to our Noble Ledgers Documentation Site
-  image:
-    file: ../../assets/chess_board.png
+  title: Keep your books.
+    Know your next step.
+  tagline: Practical help for the people behind the ledger. Set up your company, work through everyday accounting, and prepare reports with confidence.
   actions:
-    - text: Start Here
-      link: /noble_ledger/landing_page
+    - text: Get started
+      link: /getting_started/landing_page/
       icon: right-arrow
-    - text: Go to Noble Ledger
+    - text: Open Noble Ledger
       link: https://nobleledger.com
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from "@astrojs/starlight/components";
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## What are you working on?
 
-<CardGrid stagger>
-  <Card title="Get Started with Noble Ledger" icon="pencil">
-    Learn the basics of NBL → [Introduction to Noble
-    Ledger](/noble_ledger/landing_page/)
-  </Card>
-  <Card title="Noble Ledger API" icon="add-document">
-    Noble API → [NBL - API](/noble_ledger/landing_page/)
-  </Card>
-  <Card title="Non Profit Accounting" icon="setting">
-    Accounting → [Understanding Non-Profit
-    Accounting](/noble_ledger/landing_page/)
-  </Card>
-  <Card title="Read all the docs for Noble Ledger" icon="open-book">
-    Documentation → [General Documentation](/noble_ledger/landing_page/)
-  </Card>
+<CardGrid>
+  <LinkCard title="Create a journal" description="Enter balanced lines, save a draft, and understand posting." href="/general-ledger/first-journal/" />
+  <LinkCard title="Enter a vendor bill" description="Record the invoice and prepare it for approval." href="/accounts-payable/first-bill/" />
+  <LinkCard title="Reconcile a bank account" description="Follow the eight stages from statement setup to review." href="/banking/reconciliation/" />
+  <LinkCard title="Record a customer receipt" description="Apply a payment to open charges and confirm the result." href="/accounts-receivable/record-receipt/" />
+  <LinkCard title="Choose a report" description="Find the right report and check its dates and data." href="/reports/report-library/" />
+  <LinkCard title="Understand your statements" description="Read the financial story behind the numbers." href="/accounting/how_to_read_financial_statement/" />
 </CardGrid>
+
+## Find your starting point
+
+<CardGrid>
+  <LinkCard title="Bookkeepers" description="Begin with journal entries, vendor bills, and reconciliation." href="/general-ledger/first-journal/" />
+  <LinkCard title="Board members" description="Understand operating funds, reserves, and financial reports." href="/accounting/fund_accounting/" />
+  <LinkCard title="Administrators" description="Add team members and review their access." href="/company/team-and-access/" />
+</CardGrid>
+
+## A little context goes a long way
+
+Explore [accounting concepts](/accounting/cash_vs_accrual/), look up a term in the [glossary](/reference/glossary/), or browse the [application overview](/noble_ledger/application_overview/).

@@ -1,54 +1,40 @@
-# Starlight Starter Kit: Basics
+# Noble Ledger documentation
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+Astro + Starlight documentation for the sibling `noble-web` frontend. The root route is the documentation homepage; task guides use the application's navigation labels.
 
-```
-npm create astro@latest -- --template starlight
-```
+## Development
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+```sh
+npm ci
+npm run dev
+npm run verify
+npm run preview
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+Use Node 22 (minimum 22.19.0). `.nvmrc`, Docker, Netlify, and CI use Node 22. Run `nvm use` before installing dependencies. Major Astro upgrades must keep runtime settings aligned.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+## Structure
 
-Static assets, like favicons, can be placed in the `public/` directory.
+- `src/content/docs/`: published Markdown/MDX and blog posts.
+- `src/content.config.ts`: Starlight and blog schemas.
+- `astro.config.mjs`: navigation, integrations, redirects, site metadata.
+- `src/styles/theme.css`: brand tokens.
+- `src/styles/starlight.css`: documentation styles.
+- `src/components/MarketingPage.astro`: retained former marketing page, not routed.
+- `docs/content-review.md`: source provenance, verification limits, remaining coverage.
 
-## 🧞 Commands
+## Authoring
 
-All commands are run from the root of the project, from a terminal:
+Use an outcome-focused title, prerequisites, numbered steps, expected result, and troubleshooting. Confirm action labels against `noble-web`. Source inspection does not replace an authenticated walkthrough. Never include live customer data in screenshots.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Preserve published URLs or add tested redirects. Add navigation groups only when their guides exist. Keep draft and internal architecture material outside published collections.
 
-## 👀 Want to learn more?
+## Verification
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+Run `npm run verify` before shipping: Astro typechecking, link-checker tests, production build, and generated HTML link/anchor/asset checks. The checker follows same-site absolute and relative URLs; it does not fetch external sites or validate srcset. Preview the home page, guides, search, mobile navigation, both themes, and keyboard focus. Complete workflow checks with the frontend and backend before marking guides runtime-verified.
+
+Netlify builds `dist/`; Docker serves the static build with nginx; the Makefile retains the existing optional Cloud Run deployment flow.
+
+## Framework baseline
+
+Astro 7.3.1, Starlight 0.42.0, MDX 8.0.0 and starlight-blog 0.29.0. The lockfile records exact resolved dependencies. Verified with Node 22.23.2 and npm 10; use `nvm install 22` if your Node 22 patch is below 22.19.0.

@@ -2,33 +2,33 @@
 .PHONY: build
 build:
 	@echo "Building site..."
-	pnpm build
+	npm run build
 	@echo "Finished started!"
 
 .PHONY: deploy
 deploy:
 	@echo "Deploy hosting to netlify"
-	pnpm build	
+	npm run build
 	ntl deploy --prod --dir=dist
 
 .PHONY: start
 start:
 	@echo "start web app"
-	pnpm dev
+	npm run dev
 
 .PHONY: add
-add:	
-	@echo "push to git\n" 
-	git add . 
-	@echo "update\n" 
-	git commit -m '$(comment)' 
-	@echo "push to main\n" 
-	git push origin blog-1 
-	
+add:
+	@echo "push to git\n"
+	git add .
+	@echo "update\n"
+	git commit -m '$(comment)'
+	@echo "push to main\n"
+	git push origin blog-1
+
 .PHONY: all
-all:   
+all:
 	@echo "run commit, build and deploy'
-	git add .; git commit -m 'deploy'; git push origin main; make deploy 
+	git add .; git commit -m 'deploy'; git push origin main; make deploy
 
 .PHONY: push
 push:

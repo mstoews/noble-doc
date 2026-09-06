@@ -11,6 +11,7 @@ import starlightBlog from "starlight-blog";
 // @ts-ignore
 export default defineConfig({
   site: "https://nbl.nobleledger.com",
+  redirects: { "/noble_ledger/landing_page": "/getting_started/landing_page/" },
   vite: {
     // @ts-ignore
     plugins: [tailwindcss()],
@@ -35,7 +36,8 @@ export default defineConfig({
     }),
     starlight({
       plugins: [starlightBlog()],
-      title: "NBL Documentation",
+      title: "Noble Ledger",
+      favicon: "/favicon.ico",
       components: {
         Footer: "./src/components/StarlightFooter.astro",
       },
@@ -72,38 +74,23 @@ export default defineConfig({
         },
       ],
       sidebar: [
-        {
-          label: "Start Here",
-          autogenerate: { directory: "getting_started" },
-        },
-        {
-          label: "Noble Ledger Docs",
-          autogenerate: { directory: "noble_ledger" },
-        },
-        {
-          label: "Accounting",
-          autogenerate: { directory: "accounting" },
-        },
-        {
-          label: "Guides",
-          autogenerate: { directory: "guides" },
-        },
-        {
-          label: "Condominium Law",
-          autogenerate: { directory: "condo_law" },
-        },
-        {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
-        },
-        {
-          label: "FAQ",
-          autogenerate: { directory: "faq" },
-        },
-        {
-          label: "Company Policies",
-          autogenerate: { directory: "policy" },
-        },
+        { label: "Start here", items: [{ label: "Welcome", slug: "getting_started/landing_page" }, { label: "Account setup", slug: "getting_started/getting_started" }] },
+        { label: "General Ledger", items: [{ autogenerate: { directory: "general-ledger" } }] },
+        { label: "Accounts Receivable", items: [{ autogenerate: { directory: "accounts-receivable" } }] },
+        { label: "Accounts Payable", items: [{ autogenerate: { directory: "accounts-payable" } }] },
+        { label: "Banking", items: [{ autogenerate: { directory: "banking" } }] },
+        { label: "Reports & close", items: ["reports/report-library", "accounting/how_to_read_financial_statement", "guides/year_end_close", "guides/prepare_for_audit"] },
+        { label: "Budgets", items: [{ autogenerate: { directory: "budgets" } }] },
+        { label: "Community", items: [{ autogenerate: { directory: "community" } }] },
+        { label: "Documents & audit", items: [{ autogenerate: { directory: "documents" } }] },
+        { label: "Company setup", items: [{ autogenerate: { directory: "company" } }] },
+        { label: "Learn accounting", collapsed: true, items: [{ autogenerate: { directory: "accounting" } }] },
+        { label: "Guides", collapsed: true, items: [{ autogenerate: { directory: "guides" } }] },
+        { label: "Reference", collapsed: true, items: [{ autogenerate: { directory: "reference" } }] },
+        { label: "Condominium law", collapsed: true, items: [{ autogenerate: { directory: "condo_law" } }] },
+        { label: "Company policies", collapsed: true, items: [{ autogenerate: { directory: "policy" } }] },
+        { label: "FAQ", items: [{ autogenerate: { directory: "faq" } }] },
+        { label: "About the application", items: [{ autogenerate: { directory: "noble_ledger" } }] },
       ],
     }),
     mdx(),

@@ -36,8 +36,33 @@ SUMMARY OF KEY POINTS
 
 Want to learn more about what we do with any information we collect? [Review the Privacy Notice in full](#toc).
 
+<span id="toc"></span>
+
+## Table of contents
+
+- [1. WHAT INFORMATION DO WE COLLECT?](#privacy-section-1)
+- [2. HOW DO WE PROCESS YOUR INFORMATION?](#privacy-section-2)
+- [3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?](#privacy-section-3)
+- [4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?](#privacy-section-4)
+- [5. DO WE OFFER ARTIFICIAL INTELLIGENCE-BASED PRODUCTS?](#privacy-section-5)
+- [6. HOW LONG DO WE KEEP YOUR INFORMATION?](#privacy-section-6)
+- [7. HOW DO WE KEEP YOUR INFORMATION SAFE?](#privacy-section-7)
+- [8. DO WE COLLECT INFORMATION FROM MINORS?](#privacy-section-8)
+- [9. WHAT ARE YOUR PRIVACY RIGHTS?](#privacy-section-9)
+- [10. CONTROLS FOR DO-NOT-TRACK FEATURES](#privacy-section-10)
+- [11. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?](#privacy-section-11)
+- [12. DO WE MAKE UPDATES TO THIS NOTICE?](#privacy-section-12)
+- [13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#privacy-section-13)
+- [14. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?](#privacy-section-14)
+
+<span id="infocollect"></span>
+
+<span id="privacy-section-1"></span>
+
 1\. WHAT INFORMATION DO WE COLLECT?
 -----------------------------------
+
+<span id="personalinfo"></span>
 
 ### Personal information you disclose to us
 
@@ -71,6 +96,10 @@ All personal information that you provide to us must be true, complete, and accu
 
 Our use of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the [Limited Use requirements](https://developers.google.com/terms/api-services-user-data-policy#limited-use).  
 
+<span id="infouse"></span>
+
+<span id="privacy-section-2"></span>
+
 2\. HOW DO WE PROCESS YOUR INFORMATION?
 ---------------------------------------
 
@@ -89,6 +118,8 @@ Our use of information received from Google APIs will adhere to [Google API Ser
 * **To enable user-to-user communications.** We may process your information if you choose to use any of our offerings that allow for communication with another user.
 
 * **To save or protect an individual's vital interest.** We may process your information when necessary to save or protect an individual’s vital interest, such as to prevent harm.
+
+<span id="privacy-section-3"></span>
 
 3\. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?
 ---------------------------------------------------------------
@@ -135,6 +166,10 @@ In some exceptional cases, we may be legally permitted under applicable law to p
 
 * If the information is publicly available and is specified by the regulations
 
+<span id="whoshare"></span>
+
+<span id="privacy-section-4"></span>
+
 4\. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
 -------------------------------------------------------------
 
@@ -143,6 +178,8 @@ In some exceptional cases, we may be legally permitted under applicable law to p
 We may need to share your personal information in the following situations:
 
 * **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+
+<span id="privacy-section-5"></span>
 
 5\. DO WE OFFER ARTIFICIAL INTELLIGENCE-BASED PRODUCTS?
 -------------------------------------------------------
@@ -171,6 +208,8 @@ We believe in giving you the power to decide how your data is used. To opt out, 
 
 **
 
+<span id="privacy-section-6"></span>
+
 6\. HOW LONG DO WE KEEP YOUR INFORMATION?
 -----------------------------------------
 
@@ -180,6 +219,10 @@ We will only keep your personal information for as long as it is necessary for t
 
 When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
 
+<span id="infosafe"></span>
+
+<span id="privacy-section-7"></span>
+
 7\. HOW DO WE KEEP YOUR INFORMATION SAFE?
 -----------------------------------------
 
@@ -187,12 +230,18 @@ When we have no ongoing legitimate business need to process your personal inform
 
 We have implemented appropriate and reasonable technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.
 
+<span id="privacy-section-8"></span>
+
 8\. DO WE COLLECT INFORMATION FROM MINORS?
 ------------------------------------------
 
 **In Short:** _We do not knowingly collect data from or market to children under 18 years of age._
 
 We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at <mstoews@nobleledger.com>.
+
+<span id="privacyrights"></span>
+
+<span id="privacy-section-9"></span>
 
 9\. WHAT ARE YOUR PRIVACY RIGHTS?
 ---------------------------------
@@ -206,6 +255,8 @@ We will consider and act upon any request in accordance with applicable data pro
 If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your [Member State data protection authority](https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm) or [UK data protection authority](https://ico.org.uk/make-a-complaint/data-protection-complaints/data-protection-complaints/).
 
 If you are located in Switzerland, you may contact the [Federal Data Protection and Information Commissioner](https://www.edoeb.admin.ch/edoeb/en/home.html).
+
+<span id="withdrawconsent"></span>
 
 **Withdrawing your consent:** If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section "[HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact)" below or updating your preferences.
 
@@ -221,12 +272,16 @@ However, please note that this will not affect the lawfulness of the processing 
 
 Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.
 
+<span id="privacy-section-10"></span>
+
 10\. CONTROLS FOR DO-NOT-TRACK FEATURES
 ---------------------------------------
 
 **Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Notice.
 
 California law requires us to let you know how we respond to web browser DNT signals. Because there currently is not an industry or legal standard for recognizing or honoring DNT signals, we do not respond to them at this time.
+
+<span id="privacy-section-11"></span>
 
 11\. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
 -------------------------------------------------------------
@@ -393,12 +448,18 @@ If you submit the request through an authorized agent, we may need to collect ad
 
 **California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us by using the contact details provided in the section "[HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#contact)"**
 
+<span id="privacy-section-12"></span>
+
 12\. DO WE MAKE UPDATES TO THIS NOTICE?
 ---------------------------------------
 
 **In Short:** Yes, we will update this notice as necessary to stay compliant with relevant laws.
 
 We may update this Privacy Notice from time to time. The updated version will be indicated by an updated "Revised" date at the top of this Privacy Notice. If we make material changes to this Privacy Notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this Privacy Notice frequently to be informed of how we are protecting your information.
+
+<span id="contact"></span>
+
+<span id="privacy-section-13"></span>
 
 13\. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
 ----------------------------------------------
@@ -408,6 +469,8 @@ if you have questions or comments about this notice, you may email us at **<msto
 **Nobleledger
 405 Main Street, 16th Floor PH1C, New York City, NY 10044
 United States**
+
+<span id="privacy-section-14"></span>
 
 14\. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
 ------------------------------------------------------------------------

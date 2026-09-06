@@ -126,3 +126,27 @@ starlight-toc h2 {
   background: var(--brass-tint);
   border-radius: 3px;
 }
+
+/* Readable documentation surfaces across desktop and mobile. */
+:root { --sl-content-width: 48rem; --sl-text-body: 1rem; }
+.sl-markdown-content { overflow-wrap: anywhere; }
+.sl-markdown-content :is(h2, h3) { scroll-margin-top: 6rem; }
+.sl-markdown-content img { border: 1px solid var(--sl-color-hairline); border-radius: .5rem; }
+.sl-markdown-content a { text-underline-offset: .2em; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--sl-color-accent); outline-offset: 4px; }
+.hero h1 { max-width: 14ch; line-height: 1.06; }
+.hero .tagline { max-width: 42rem; line-height: 1.65; color: var(--sl-color-gray-2); }
+.hero { padding-block: clamp(2rem, 6vw, 5rem); }
+.card-grid { gap: 1rem; }
+.sl-link-card { border-radius: .65rem; box-shadow: none; }
+.sl-link-card:hover { border-color: var(--sl-color-accent); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}
+
+/* Keep workflow stage names intact in narrow comparison tables. */
+.sl-markdown-content table :is(th, td):first-child {
+  min-width: 7rem;
+  overflow-wrap: normal;
+  word-break: normal;
+}
